@@ -137,10 +137,10 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
-# Configure the sitename and domain
+# Configure the sitename and domain 
 
-# SITE_NAME = "Connecting People"
-# DOMAIN = 'localhost:3000'
+SITE_NAME = ""
+DOMAIN = ''
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
