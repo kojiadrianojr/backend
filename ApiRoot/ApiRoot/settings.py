@@ -139,8 +139,8 @@ STATIC_URL = 'static/'
 
 # Configure the sitename and domain
 
-SITE_NAME = "Connecting People"
-DOMAIN = 'localhost:3000'
+# SITE_NAME = "Connecting People"
+# DOMAIN = 'localhost:3000'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
