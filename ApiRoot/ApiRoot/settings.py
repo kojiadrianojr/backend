@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "djoser",
     "rest_framework_simplejwt.token_blacklist",
-    "corsheaders"
+    "corsheaders",
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,12 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
+# Configure the sitename and domain
+
+SITE_NAME = "Connecting People"
+DOMAIN = 'localhost:3000'
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Configuration for:
@@ -159,9 +166,3 @@ DJOSER = {
     "SEND_ACTIVATION_EMAIL": False,
     "SERIALIZERS": {},
 }
-
-# Configure the sitename and domain
-
-SITE_NAME = "Connecting People"
-
-DOMAIN = 'localhost:3000'
