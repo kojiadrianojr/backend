@@ -4,5 +4,4 @@ from blog.models import Blog
 class BlogSerializer(serializers.ModelSerializer):
   class Meta:
     model = Blog
-    fields = ['id', 'owner', 'title', 'description']
-    read_only_fields = ['created', 'updated', 'id']
+    fields = ['id', 'owner', 'title', 'description', 'created', 'updated']
