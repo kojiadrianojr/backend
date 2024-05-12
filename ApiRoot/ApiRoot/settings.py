@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,9 @@ SECRET_KEY = 'django-insecure-wlpjmrr^(ssrl5(4$twqal9j%ha2dih5196^$+_nm4%h0i1y11
 DEBUG = True
 
 ALLOWED_HOSTS = [
-  "kojiadrianojr.pythonanywhere.com"
+  "kojiadrianojr.pythonanywhere.com",
+  "localhost",
+  "127.0.0.1"
 ]
 
 
@@ -42,8 +45,9 @@ INSTALLED_APPS = [
 
     # installed apps
     "rest_framework",
-    "djoser",
     "rest_framework_simplejwt.token_blacklist",
+    "rest_framework_simplejwt",
+    "djoser",
     "corsheaders",
     "blog",
 ]
@@ -152,6 +156,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # email_backend
 
 REST_FRAMEWORK = {
+  "DEFAULT_PERMISSION_CLASSES": (
+    "rest_framework.permissions.IsAuthenticated",
+  ),
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
