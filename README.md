@@ -1,25 +1,43 @@
-# Introduction:
-Backend code for the BLOG APP
+## Introduction:
+Blogsite BE is the backend service for blogsite-fe, a simple web application blogging platform. Built with Django, Blogsite BE provides robust and scalable RESTful APIs to support user authentication, and blog post management.
 
-
-# Requirements
-- Django
+## Requirements
 - Python
-- virtualenvironment
+- Django
+- Django Rest Framework
+- Djoser 
 
-# Usage
-## Local
-- Create a virtualenv, to install the requirements
-- Copy the requirements.txt to your virtualenv
-- activate your virtualenv
-- <img width="335" alt="image" src="https://github.com/kojiadrianojr/backend/assets/43143132/aa4a5f60-03e4-4882-b45b-17d733ee81ee">
-- You can read more about virtualenv here: https://virtualenv.pypa.io/en/latest/user_guide.html
-- run "pip install -r requirements.txt" to install the requirements
-### Running the server
-- while on your virtualenv: Go to the ApiRoot (where the "manage.py" is located)
-- <img width="359" alt="image" src="https://github.com/kojiadrianojr/backend/assets/43143132/5a830aac-6023-476d-964c-147cb966faa6">
-Execute the following commands:
-- python manage.py migrate
-- python manage.py runserver
+> [!NOTE]
+> This repository is the backend for the application [blogsite-fe](https://github.com/kojiadrianojr/blogsite-fe/tree/master)
 
+## Setup
+Follow these steps to get a local copy of the project up and running.
+
+1. Close this repository
+```
+git clone https://github.com/kojiadrianojr/backend.git
+```
+2. Create and activate a veritual environment
+3. Copy the ```requirements.txt``` to your virtual environment
+4. Activate your virtual environment
+5. Install the dependencies
+```
+pip install -r requirements.txt
+```
+> [!NOTE]
+> You can read more about virtualenv here: https://virtualenv.pypa.io/en/latest/user_guide.html
+
+## Running the server
+1. Apply migration
+```
+python manage.py migrate
+```
+2. Run the development server
+```
+python manage.py runserver
+```
+
+## Live URL
+The api is deployed on https://www.pythonanywhere.com/, and can be accessed here:
+- [Blogsite API](https://kojiadrianojr.pythonanywhere.com/)
 
